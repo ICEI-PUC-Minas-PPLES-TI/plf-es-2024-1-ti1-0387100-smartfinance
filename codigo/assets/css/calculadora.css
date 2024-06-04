@@ -1,0 +1,79 @@
+.calculator {
+    width: 350px;
+    margin: 50px auto;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+button {
+  background-color: #181818 !important;
+}
+
+.form-control {
+    background-color: #181818 !important;
+    color: white !important;
+    border: 1px solid #181818 !important;
+}
+.form-control:focus {
+    background-color: #181818 !important;
+    color: white !important;
+    border-color: #181818 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Modal background */
+.modal-content {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Modal header */
+.modal-header {
+    border-bottom: 1px solid #4f5b62;
+}
+.modal-title {
+    color: #ffffff;
+}
+.close {
+    color: #ffffff;
+}
+
+/* Modal body */
+.modal-body {
+    color: #ffffff;
+}
+
+/* Form controls */
+.form-control-dark {
+    background-color: #495057;
+    color: #ffffff;
+    border: 1px solid #6c757d;
+}
+.form-control-dark:focus {
+    background-color: #495057;
+    color: #ffffff;
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+/* Modal footer */
+.modal-footer {
+    border-top: 1px solid #4f5b62;
+}
+.btn-secondary, .btn-primary {
+    border: 1px solid #6c757d;
+}
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+.btn-secondary:hover, .btn-primary:hover {
+    background-color: #5a6268;
+    color: #ffffff;
+}
