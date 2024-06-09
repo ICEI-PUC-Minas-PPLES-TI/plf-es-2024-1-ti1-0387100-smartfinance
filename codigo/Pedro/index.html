@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Gastos</title>
+    <link rel="stylesheet" href="/codigo/Pedro/CSS/gerenciar.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Gastos</h1>
+        </header>
+
+        <section class="calendar-section">
+            <h2>Calendário de Gastos</h2>
+            <div class="calendar" id="calendar">
+            
+            </div>
+        </section>
+
+        <h2 class="data-title">DADOS</h2>
+        <div class="day-selector">
+            <div class="selector" id="day-selector">
+                <p>Selecionar Dia</p>
+                <form id="day-selector-form">
+                    <label for="select-day">Dia:</label>
+                    <input type="number" id="select-day" name="select-day" min="1" max="31">
+                    <button type="button" onclick="selectDay()">Selecionar</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="data-area">
+            <div class="day-details">
+                <div id="day-summary" class="data-box">
+                    <h3>Gráfico de Gastos do Dia</h3>
+                
+                    <img id="example-graph" src="codigo\Pedro\img\grafico.png" alt="Exemplo de Gráfico">
+                </div>
+                <div class="input-data data-box">
+                    <h3>Preencher Dados</h3>
+                    <form id="expense-form">
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" name="date">
+                        <label for="category">Categoria:</label>
+                        <input type="text" id="category" name="category">
+                        <label for="amount">Valor:</label>
+                        <input type="number" id="amount" name="amount" min="0">
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex-container">
+            <div class="suggestions data-box">
+                <h3>Sugestões de Gastos</h3>
+                <div id="suggestions-list">
+                </div>
+            </div>
+
+            <div class="settings data-box">
+                <h3>Configurações do Calendário</h3>
+                <form id="settings-form">
+                    <label for="budget">Orçamento Mensal:</label>
+                    <input type="number" id="budget" name="budget">
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="report">
+            <h2>Relatório Mensal</h2>
+            <div id="monthly-report">
+                <p>O relatório será exibido aqui.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="/codigo/Pedro/JS/gerenciar.js"></script>
+</body>
+</html>
