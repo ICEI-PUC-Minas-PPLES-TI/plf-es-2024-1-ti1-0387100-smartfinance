@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Dados</title>
+    <style>
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Dados</h1>
+    <div>
+        <button onclick="showTab('videos')">Vídeos</button>
+        <button onclick="showTab('artigos')">Artigos</button>
+    </div>
+    <div id="videos" class="tab">
+        <h2>Vídeos</h2>
+        <input type="text" id="videoLink" placeholder="Insira o link do vídeo">
+        <input type="text" id="videoTitle" placeholder="Título do vídeo">
+        <button onclick="saveVideo()">Salvar Vídeo</button>
+    </div>
+    <div id="artigos" class="tab">
+        <h2>Artigos</h2>
+        <input type="text" id="articleName" placeholder="Nome do artigo">
+        <textarea id="articleDescription" placeholder="Breve descrição"></textarea>
+        <input type="text" id="articleLink" placeholder="Link do artigo">
+        <button onclick="saveArticle()">Salvar Artigo</button>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        function saveVideo() {
+            const videoLink = document.getElementById('videoLink').value;
+            const videoTitle = document.getElementById('videoTitle').value;
+
+            fetch('/videos', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title: videoTitle, link: videoLink })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+        }
+
+        function saveArticle() {
+            const articleName = document.getElementById('articleName').value;
+            const articleDescription = document.getElementById('articleDescription').value;
+            const articleLink = document.getElementById('articleLink').value;
+
+            fetch('/articles', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name: articleName, description: articleDescription, link: articleLink })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+        }
+    </script>
+</body>
+</html>

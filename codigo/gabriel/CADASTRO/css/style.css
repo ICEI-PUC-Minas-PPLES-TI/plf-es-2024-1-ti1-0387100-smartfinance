@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+input, textarea, button {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
