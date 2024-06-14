@@ -3,81 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de Gastos</title>
-    <link rel="stylesheet" href="/codigo/Pedro/CSS/gerenciar.css">
+    <title>Gerenciamento de Gastos</title>
+    <link rel="stylesheet" href="/codigo/Pedro/CSS/styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Gerenciador de Gastos</h1>
-        </header>
-
-        <section class="calendar-section">
-            <h2>Calendário de Gastos</h2>
-            <div class="calendar" id="calendar">
-            
-            </div>
-        </section>
-
-        <h2 class="data-title">DADOS</h2>
-        <div class="day-selector">
-            <div class="selector" id="day-selector">
-                <p>Selecionar Dia</p>
-                <form id="day-selector-form">
-                    <label for="select-day">Dia:</label>
-                    <input type="number" id="select-day" name="select-day" min="1" max="31">
-                    <button type="button" onclick="selectDay()">Selecionar</button>
-                </form>
+        <h1>Gerenciamento de Gastos</h1>
+        <div class="calendar">
+            <div class="day">Seg 1</div>
+            <div class="day">Ter 2</div>
+            <div class="day">Qua 3</div>
+            <div class="day">Qui 4</div>
+            <div class="day">Sex 5</div>
+            <div class="day">Sáb 6</div>
+            <div class="day">Dom 7</div>
+            <div class="day">Seg 8</div>
+            <div class="day">Ter 9</div>
+            <div class="day">Qua 10</div>
+            <div class="day">Qui 11</div>
+            <div class="day">Sex 12</div>
+            <div class="day">Sáb 13</div>
+            <div class="day">Dom 14</div>
+            <div class="day">Seg 15</div>
+            <div class="day">Ter 16</div>
+            <div class="day">Qua 17</div>
+            <div class="day">Qui 18</div>
+            <div class="day">Sex 19</div>
+            <div class="day">Sáb 20</div>
+            <div class="day">Dom 21</div>
+            <div class="day">Seg 22</div>
+            <div class="day">Ter 23</div>
+            <div class="day">Qua 24</div>
+            <div class="day">Qui 25</div>
+            <div class="day">Sex 26</div>
+            <div class="day">Sáb 27</div>
+            <div class="day">Dom 28</div>
+            <div class="day">Seg 29</div>
+            <div class="day">Ter 30</div>
+            <div class="day">Qua 31</div>
+        </div>
+        <div class="details">
+            <div id="select-day">
+                <h2>DADOS</h2>
+                <div id="selected-day">Dia</div>
+                <input type="text" id="location" placeholder="Onde" class="hidden">
+                <input type="number" id="budget" placeholder="Orçamento" min="0" class="hidden">
             </div>
         </div>
-
-        <section class="data-area">
-            <div class="day-details">
-                <div id="day-summary" class="data-box">
-                    <h3>Gráfico de Gastos do Dia</h3>
-                
-                    <img id="example-graph" src="codigo\Pedro\img\grafico.png" alt="Exemplo de Gráfico">
-                </div>
-                <div class="input-data data-box">
-                    <h3>Preencher Dados</h3>
-                    <form id="expense-form">
-                        <label for="date">Data:</label>
-                        <input type="date" id="date" name="date">
-                        <label for="category">Categoria:</label>
-                        <input type="text" id="category" name="category">
-                        <label for="amount">Valor:</label>
-                        <input type="number" id="amount" name="amount" min="0">
-                        <button type="submit">Adicionar</button>
-                    </form>
-                </div>
+        <div class="details">
+            <div id="daily-chart">
+                <h2>Gráfico de Gastos do Dia</h2>
+                <canvas id="dailyChart"></canvas>
             </div>
-        </section>
-
-        <section class="flex-container">
-            <div class="suggestions data-box">
-                <h3>Sugestões de Gastos</h3>
-                <div id="suggestions-list">
-                </div>
+            <div id="fill-data">
+                <h2>Preencher Dados</h2>
+                <input type="text" id="category1" placeholder="Categoria 1">
+                <input type="number" id="amount1" placeholder="Valor 1" min="0">
+                <input type="text" id="category2" placeholder="Categoria 2">
+                <input type="number" id="amount2" placeholder="Valor 2" min="0">
+                <input type="text" id="category3" placeholder="Categoria 3">
+                <input type="number" id="amount3" placeholder="Valor 3" min="0">
+                <button id="update-chart">Atualizar Gráfico</button>
             </div>
-
-            <div class="settings data-box">
-                <h3>Configurações do Calendário</h3>
-                <form id="settings-form">
-                    <label for="budget">Orçamento Mensal:</label>
-                    <input type="number" id="budget" name="budget">
-                    <button type="submit">Salvar</button>
-                </form>
+        </div>
+        <div class="row">
+            <div class="block" id="suggestions">
+                <h2>Sugestões de Gastos</h2>
+                <p>Sugestões serão exibidas aqui</p>
             </div>
-        </section>
-
-        <section class="report">
-            <h2>Relatório Mensal</h2>
-            <div id="monthly-report">
-                <p>O relatório será exibido aqui.</p>
+            <div class="block" id="monthly-report">
+                <h2>Relatório Mensal</h2>
+                <p>Total de gastos do mês: <span id="total-expenses">0</span></p>
+                <canvas id="monthlyChart"></canvas>
             </div>
-        </section>
+        </div>
     </div>
-
-    <script src="/codigo/Pedro/JS/gerenciar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/codigo/Pedro/JS/script.js"></script>
 </body>
 </html>
