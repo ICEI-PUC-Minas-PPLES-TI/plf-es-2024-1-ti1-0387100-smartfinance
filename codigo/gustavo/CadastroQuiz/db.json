@@ -1,0 +1,22 @@
+{
+    "quizzes": [
+      {
+        "id": 1,
+        "titulo": "Nome do quiz",
+        "descricao": "Descrição do quiz",
+        "perguntas": [
+          {
+            "id_pergunta": 1,
+            "texto": "Pergunta",
+            "respostas": [
+              {
+                "id_resposta": 1,
+                "texto": "Resposta",
+                "correto": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,223 @@
+{
+    "conteudos": [
+        {
+            "id": 1,
+            "titulo": "Introdução à Poupança",
+            "descricao": "Uma visão geral sobre a importância de poupar dinheiro e dicas práticas para começar.",
+            "autor_id": 1,
+            "data_publicacao": "2023-01-15",
+            "categoria_id": 1,
+            "tags": [
+                "poupança",
+                "economia"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Noções Básicas de Investimento",
+            "descricao": "Entenda os princípios básicos do investimento e como começar a investir de forma segura.",
+            "autor_id": 2,
+            "data_publicacao": "2023-02-20",
+            "categoria_id": 2,
+            "tags": [
+                "investimento",
+                "principiantes"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Como Fazer um Orçamento",
+            "descricao": "Aprenda a criar e manter um orçamento pessoal para controlar suas finanças.",
+            "autor_id": 3,
+            "data_publicacao": "2023-03-10",
+            "categoria_id": 3,
+            "tags": [
+                "orçamento",
+                "finanças pessoais"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titulo": "Gestão de Dívidas",
+            "descricao": "Estratégias eficazes para gerenciar e pagar suas dívidas de forma eficiente.",
+            "autor_id": 4,
+            "data_publicacao": "2023-04-05",
+            "categoria_id": 4,
+            "tags": [
+                "dívidas",
+                "gestão"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "titulo": "Entendendo o Crédito",
+            "descricao": "Tudo o que você precisa saber sobre crédito, como funciona e como usá-lo com responsabilidade.",
+            "autor_id": 5,
+            "data_publicacao": "2023-05-01",
+            "categoria_id": 5,
+            "tags": [
+                "crédito",
+                "responsabilidade"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "Planejamento para Aposentadoria",
+            "descricao": "Dicas e estratégias para planejar uma aposentadoria segura e confortável.",
+            "autor_id": 6,
+            "data_publicacao": "2023-06-12",
+            "categoria_id": 6,
+            "tags": [
+                "aposentadoria",
+                "planejamento"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        }
+    ],
+    "autores": [
+        {
+            "id": 1,
+            "nome": "Maria Silva",
+            "email": "maria.silva@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Maria Silva é uma consultora financeira experiente com mais de 15 anos de atuação no mercado. Ela é especializada em educação financeira e ajudou inúmeras pessoas a melhorarem suas finanças pessoais."
+        },
+        {
+            "id": 2,
+            "nome": "João Pereira",
+            "email": "joao.pereira@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "João Pereira é um especialista em investimentos e autor de vários livros sobre como investir com segurança. Com mais de 20 anos de experiência, ele é uma referência no setor financeiro."
+        },
+        {
+            "id": 3,
+            "nome": "Ana Souza",
+            "email": "ana.souza@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Ana Souza é uma planejadora financeira certificada e coach de finanças pessoais. Ela trabalha com clientes para desenvolver estratégias personalizadas de orçamento e gestão financeira."
+        },
+        {
+            "id": 4,
+            "nome": "Carlos Lima",
+            "email": "carlos.lima@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Carlos Lima é um consultor de dívidas que ajuda indivíduos e empresas a saírem do vermelho e estruturarem suas finanças de maneira eficiente. Ele possui um blog popular sobre gestão de dívidas."
+        },
+        {
+            "id": 5,
+            "nome": "Beatriz Andrade",
+            "email": "beatriz.andrade@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Beatriz Andrade é uma especialista em crédito com ampla experiência em bancos e instituições financeiras. Ela oferece conselhos sobre como usar o crédito de forma responsável e eficiente."
+        },
+        {
+            "id": 6,
+            "nome": "Roberto Fernandes",
+            "email": "roberto.fernandes@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Roberto Fernandes é um planejador financeiro focado em aposentadoria. Ele ajuda seus clientes a planejarem um futuro financeiro seguro, oferecendo dicas e estratégias de investimento."
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Educação Financeira"
+        },
+        {
+            "id": 2,
+            "nome": "Investimento"
+        },
+        {
+            "id": 3,
+            "nome": "Orçamento"
+        },
+        {
+            "id": 4,
+            "nome": "Dívidas"
+        },
+        {
+            "id": 5,
+            "nome": "Crédito"
+        },
+        {
+            "id": 6,
+            "nome": "Aposentadoria"
+        }
+    ],
+    "favoritos": [
+        {
+            "id": 1,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 1
+        },
+        {
+            "id": 2,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 3
+        },
+        {
+            "id": 3,
+            "usuario_id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+            "conteudo_id": 2
+        }
+    ]
+}
