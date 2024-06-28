@@ -12,281 +12,113 @@ body {
   width: 100vw;
   height: 500vh;
   background-color: black;
+  color: white;
 }
 
 .container {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,1fr) .5fr;
   grid-template-areas:
-    "sidebar main main main main main"
-    "sidebar main main main main main"
-    "sidebar main main main main main"
-    "sidebar main main main main main"
-    "sidebar main main main main main"
-    "sidebar main main main main main";
+    "intro intro intro intro intro"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "end end end end end"
+    ;
 }
 
-/* Sidebar */
+/* intro */
 
-.disabled-link {
-  pointer-events: none;
-  cursor: default;
-}
+.intro{
+  grid-area: intro;
 
-.sidebar {
-  grid-area: sidebar;
-  position: fixed;
-  height: 100vh;
-  width: 78px;
-  background: black;
-  padding: 6px 14px;
-  z-index: 99;
-  transition: all 0.5s ease;
-}
-
-.sidebar.open {
-  width: 250px;
-}
-
-.sidebar .logo-details {
-  height: 60px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
-}
-
-.sidebar .logo-details .icon {
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.sidebar .logo-details .logo_name {
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.sidebar .logo-details .logo_name a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
-  opacity: 1;
-}
-
-.sidebar .logo-details #btn {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  transition: all 0.4s ease;
-  font-size: 23px;
   text-align: center;
-  cursor: pointer;
-  transition: all 0.5s ease;
 }
-
-.sidebar.open .logo-details #btn {
-  text-align: right;
+.intro .logo h1{
+  font-weight: 900;
+  font-size: 200px;
+  color: yellow;
 }
-
-.sidebar i {
-  color: white;
-  height: 60px;
-  min-width: 50px;
-  font-size: 28px;
-  text-align: center;
-  line-height: 60px;
-}
-
-.sidebar .nav-list {
-  margin-top: 20px;
-  height: 100%;
-}
-
-.sidebar li {
-  position: relative;
-  margin: 8px 0;
-  list-style: none;
-}
-
-.sidebar li .tooltip {
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 15px);
-  z-index: 3;
-  background: white;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 400;
-  opacity: 0;
-  white-space: nowrap;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.sidebar li:hover .tooltip {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(-50%) translateX(10px);
-}
-
-.sidebar.open li .tooltip {
-  display: none;
-}
-
-.sidebar input {
-  font-size: 15px;
-  color: white;
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: black;
-}
-
-.sidebar.open input {
-  padding: 0 20px 0 50px;
-  width: 100%;
-}
-
-.sidebar li a {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border-radius: 12px;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s ease;
-  background: black;
-}
-
-.sidebar li a:hover {
-  background: white;
-}
-
-.sidebar li a .links_name {
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s;
-}
-
-.sidebar.open li a .links_name {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i {
-  transition: all 0.5s ease;
-  color: black;
-}
-
-.sidebar li i {
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  border-radius: 12px;
-}
-
-.home-section {
-  position: relative;
-  background: white;
-  min-height: 100vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
-  transition: all 0.5s ease;
-  z-index: 2;
-}
-
-.sidebar.open ~ .home-section {
-  left: 250px;
-  width: calc(100% - 250px);
-}
-
-.home-section .text {
-  display: inline-block;
-  color: black;
-  font-size: 25px;
-  font-weight: 500;
-  margin: 18px;
-}
-
 
 /* main */
-
 .main {
   grid-area: main;
-  background-color: black;
-  padding-left: 78px;
+  padding: 75px;
+  gap: 75px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: .1fr repeat(4,1fr);
+  grid-template-areas:
+    "nome nome nome nome nome"
+    "situacao situacao situacao situacao situacao"
+    "gerenciamento gerenciamento gerenciamento gerenciamento gerenciamento"
+    "quiz quiz quiz quiz quiz"
+    "perfil perfil perfil perfil perfil"
+    ;
+}
+.main .nome{
+  grid-area: nome;
+}
+ .main .nome h2{
+  font-weight: 900;
+  font-size: 100px;
+ }
+
+.main .situacao{
+  grid-area: situacao;
+  display: flex;
+  
+}
+.dados{
+  width: 50%;
+  height: 100%;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 420px) {
-  .main{
-    padding-top: 75px;
-    padding-left: 0px;
-  }
-  .container {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "sidebar"
-      "main";
-  }
-  .sidebar {
-    grid-area: sidebar;
-    position: fixed;
-    height: 75px;
-    width: 100vw;
-    top: 0;
-    z-index: 2;
-    transition: height 0.2s ease-in-out;
-  }
-  .sidebar.open {
-    height: 325px;
-    width: 100vw;
-  }
-  .sidebar .nav-list {
-    display: block;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-    transform: translateY(-20px);
-  }
-  .sidebar.open .nav-list {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.dados h3{
+  width: fit-content;
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: red;
+}
+.dados p{
+  font-weight: 200;
+  font-size: 30px;
+}
 
-  .sidebar .logo-details #btn.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .nav-list.hide {
-    pointer-events: none;
-  }
+.tela{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.main .gerenciamento{
+  grid-area: gerenciamento;
+  display: flex;
+}
+
+.main .quiz{
+  grid-area: quiz;
+  display: flex;
+
+}
+.main .perfil{
+  grid-area: perfil;
+  display: flex;
+}
+/* end */
+
+.end{
+  grid-area: end;
 }
