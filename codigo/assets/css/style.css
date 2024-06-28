@@ -61,6 +61,8 @@ body {
     "quiz quiz quiz quiz quiz"
     "perfil perfil perfil perfil perfil"
     ;
+    background-color: black;
+    color: white;
 }
 .main .nome{
   grid-area: nome;
@@ -83,6 +85,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .dados h3{
@@ -94,6 +97,23 @@ body {
 }
 .dados p{
   font-weight: 200;
+  font-size: 30px;
+}
+
+.dados .botao{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+.dados .botao a{
+  text-decoration: none;
+  color: red;
+  font-weight: 800;
   font-size: 30px;
 }
 
@@ -121,4 +141,26 @@ body {
 
 .end{
   grid-area: end;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn .botao{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  width: 400px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+.btn .botao a{
+  text-decoration: none;
+  color: red;
+  font-weight: 800;
+  font-size: 30px;
 }
