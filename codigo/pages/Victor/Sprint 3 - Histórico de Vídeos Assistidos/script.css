@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #historico {
+    margin-bottom: 20px;
+  }
+  
+  .video-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .video-title {
+    margin-right: 10px;
+    color: red;
+  }
+  
+  .video-delete {
+    background-color: red; 
+    color: black; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  h1{
+    color: yellow;
+
+}
