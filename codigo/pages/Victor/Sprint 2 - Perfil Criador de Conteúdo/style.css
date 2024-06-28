@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    border-bottom: 2px solid red;
+}
+
+header h1 {
+    margin: 0;
+    color: yellow;
+    font-size: 24px;
+}
+
+header .dollar-sign {
+    color: gold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile {
+    width: 30%;
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.trophies {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trophy img {
+    width: 50px;
+    height: auto;
+}
+
+.trophy p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.content {
+    width: 65%;
+    background-color: darkgray;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
