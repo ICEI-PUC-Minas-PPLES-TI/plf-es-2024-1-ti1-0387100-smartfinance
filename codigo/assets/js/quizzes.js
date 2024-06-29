@@ -1,5 +1,5 @@
 // Importando a classe QuizzesService do arquivo de serviço
-import { QuizzesService } from "../services/QuizzesService.js";
+import { QuizzesService } from "../../services/quizzesService.js";
 
 const quizzesService = new QuizzesService();
 let perguntaCount = 0;
