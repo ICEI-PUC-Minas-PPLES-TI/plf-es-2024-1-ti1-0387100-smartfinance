@@ -1,36 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivus", sans-serif;
+}
+
+/* container */
+body {
+  width: 100vw;
+  height: 500vh;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,1fr) .1fr;
+  grid-template-areas:
+    "intro intro intro intro intro"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "end end end end end"
+    ;
+}
+
+/* intro */
+
+.intro{
+  grid-area: intro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.intro .logo h1{
+  font-weight: 900;
+  font-size: 200px;
+  color: yellow;
+}
+
 /* main */
 .main {
   grid-area: main;
   padding: 75px;
   gap: 75px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 0.1fr repeat(4, 1fr);
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: .1fr repeat(4,1fr);
   grid-template-areas:
     "nome nome nome nome nome"
     "situacao situacao situacao situacao situacao"
     "gerenciamento gerenciamento gerenciamento gerenciamento gerenciamento"
     "quiz quiz quiz quiz quiz"
-    "perfil perfil perfil perfil perfil";
-  background-color: black;
-  color: white;
+    "perfil perfil perfil perfil perfil"
+    ;
+    background-color: black;
+    color: white;
 }
-
-.main .nome {
+.main .nome{
   grid-area: nome;
+  text-align: center;
 }
-
-.main .nome h2 {
+ .main .nome h2{
   font-weight: 900;
   font-size: 100px;
-}
+ }
 
-.main .situacao {
+.main .situacao{
   grid-area: situacao;
   display: flex;
+  
 }
-
-.dados {
+.dados{
   width: 50%;
   height: 100%;
   padding: 75px;
@@ -41,20 +88,20 @@
   gap: 20px;
 }
 
-.dados h3 {
+.dados h3{
   width: fit-content;
   font-weight: 900;
   font-size: 50px;
   text-transform: uppercase;
   color: red;
 }
-
-.dados p {
+.dados p{
   font-weight: 200;
   font-size: 30px;
+  text-align: center;  
 }
 
-.dados .botao {
+.dados .botao{
   display: flex;
   align-items: center;
   justify-items: center;
@@ -64,37 +111,146 @@
   border-radius: 50px;
   background-color: yellow;
 }
-
-.dados .botao a {
+.dados .botao a{
   text-decoration: none;
   color: red;
   font-weight: 800;
   font-size: 30px;
 }
 
-.tela {
+.tela{
   width: 50%;
   height: 100%;
   background-color: white;
 }
 
-.main .gerenciamento {
+.main .gerenciamento{
   grid-area: gerenciamento;
   display: flex;
 }
 
-.main .quiz {
+.main .quiz{
   grid-area: quiz;
-}
+  display: flex;
 
-.main .perfil {
+}
+.main .perfil{
   grid-area: perfil;
+  display: flex;
 }
+/* end */
 
-.content {
-  width: 100%;
-  height: 500vh;
+.end{
+  grid-area: end;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn .botao{
   display: flex;
   align-items: center;
+  justify-items: center;
   justify-content: center;
+  text-align: center;
+  height: 90px;
+  width: 400px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+.btn .botao a{
+  text-decoration: none;
+  color: red;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+@media (max-width : 1200px) {
+  body {
+    width: 100vw;
+    height: 600vh;
+    background-color: black;
+    color: white;
+  }
+
+  .intro img{
+    width: 250px;
+    height: 25%;
+  }
+  .intro .logo h1{
+    font-size: 100px
+  }
+  
+  .container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 2fr 2fr 2fr .1fr;
+    grid-template-areas:
+      "intro intro intro intro intro"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "end end end end end"
+      ;
+  }
+  
+  .main {
+    grid-area: main;
+    padding: 75px;
+    gap: 75px;
+    display: block;
+  }
+  .main .situacao{
+    grid-area: situacao;
+    display: block;
+    padding: 20px;
+  }
+.main .gerenciamento{
+  grid-area: gerenciamento;
+  display: block;
+  padding: 20px;
+  
+}
+
+.main .quiz{
+  grid-area: quiz;
+  display: block;
+  padding: 20px;
+
+}
+.main .perfil{
+  grid-area: perfil;
+  display: block;
+  padding: 20px;
+
+}
+.dados{
+  width: 50%;
+  height: 100%;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dados{
+  width: 100%;
+  height: 400px;
+
+}
+.tela{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+}
+@media (max-width : 700px){
+  .main .nome h2{
+    font-size: 50px;
+   }
 }
