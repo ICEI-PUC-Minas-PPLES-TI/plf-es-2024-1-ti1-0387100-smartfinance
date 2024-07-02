@@ -58,7 +58,14 @@ body {
     background-color: #222; /* Adicionando um fundo levemente diferente para destacar as seções */
     border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
   }
-  
+  .main a{
+    color: #FFD700;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
   h2 {
     color: #FFD700;
     margin-bottom: 10px;
