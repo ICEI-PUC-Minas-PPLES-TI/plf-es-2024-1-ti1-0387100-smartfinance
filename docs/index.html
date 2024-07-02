@@ -573,11 +573,11 @@
                 <h5>Funcionalidade 1 - Visualização de Conteúdo</h5>
                 <p>Permite o usuário visualizar conteúdos sobre a situação financeira dele, proporcionando recomendações sobre cada área de investimento.</p>
                 <ul class="list-unstyled">
-                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                   <li><strong>Instruções de acesso: </strong><ul>
-                    <li>Abra o site e efetue o login</li>
-                    <li>Acesse o menu principal e escolha a opção Situação </li>
-                    <li>Em seguida, escolha a opção Contatos</li>
+                    <li>Através da Homepage ou da NavBar, acesse a Seção de "Situação".</li>
+                    <li>Sinta-se a vontade para visualizar as Seções e Conteúdos apresentados pelo nosso site.</li>
+                    <li>Ao clicar em qualquer conteúdo, vai ser direcionado a uma página sobre o assunto que está interessado.</li>
                   </ul></li>
                 </ul>
                 <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade.png" alt="Tela Cadastro de Contatos"></p>
@@ -587,9 +587,9 @@
               <h5>Funcionalidade 2 - Cadastro de Conteúdos</h5>
               <p>Permite o usuário cadastrar conteúdos para o nosso site, além de divulgar seu trabalho como educador financeiro.</p>
               <ul class="list-unstyled">
-                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                 <li><strong>Instruções de acesso: </strong><ul>
-                  <li>Acesse página de Situação através da NavBar onde os conteúdos do site são visualizados.</li>
+                  <li>Através da Homepage ou da NavBar, acesse a Seção de "Situação".</li>
                   <li>Em seguida vá até o final da página de Situação.</li>
                   <li>Clique na opção "Cadastro de Conteúdo".</li>
                 </ul></li>
@@ -602,9 +602,9 @@
             <h5>Funcionalidade 3 - Gerenciamento</h5>
             <p>Permite o usuário visualizar conteúdos sobre a situação financeira dele, proporcionando recomendações sobre cada área de investimento.</p>
             <ul class="list-unstyled">
-              <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+              <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Gastos</a></li>
               <li><strong>Instruções de acesso: </strong><ul>
-                <li>Abra o site e através da NavBar, acesse a aba "Gerenciamento".</li>
+                <li>Através da Homepage ou da NavBar, acesse a Seção de "Gerenciamento".</li>
                 <li>Ao clicar nessa aba, vai carregar as diversas opções para gerenciar os gastos de forma organizada.</li>
                 <li>Preencha os dados para visualizar os gráficos, sugestões e relatórios.</li>
               </ul></li>
@@ -613,19 +613,33 @@
           </section>
         </section>
         <section>
-          <h5>Funcionalidade 4 - Cadastro de Conteúdos</h5>
-          <p>Permite o usuário cadastrar conteúdos para o nosso site, além de divulgar seu trabalho como educador financeiro.</p>
+          <h5>Funcionalidade 4 - Calculadora Financeira</h5>
+          <p>Permite o usuário cadastrar Quizzes sobre diversos assuntos de Educação financeira, além de visualizar e responderos Quizzes.</p>
           <ul class="list-unstyled">
-            <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+            <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Calculadora</a></li>
             <li><strong>Instruções de acesso: </strong><ul>
-              <li>Acesse página de Situação através da NavBar onde os conteúdos do site são visualizados.</li>
-              <li>Em seguida vá até o final da página de Situação.</li>
-              <li>Clique na opção "Cadastro de Conteúdo".</li>
+              <li>Através da Homepage ou da NavBar, acesse a Seção de "Calculadora".</li>
+              <li>Em seguida tente qualquer operação matemática usando a Calculadora.</li>
+              <li>Fique a vontade para testar todas os cálculos mais complexos oferecidos pela Calculadora, como a de Juros Composto.</li>
             </ul></li>
           </ul>
           <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade.png" alt="Tela Cadastro de Contatos"></p>
         </section>
       </section>
+      <section>
+        <h5>Funcionalidade 5 - Cadastro e Visualização de Quizzes</h5>
+        <p>Permite o usuário cadastrar Quizzes sobre diversos assuntos de Educação financeira, além de visualizar e responderos Quizzes.</p>
+        <ul class="list-unstyled">
+          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Quiz</a></li>
+          <li><strong>Instruções de acesso: </strong><ul>
+            <li>Através da Homepage ou da NavBar, acesse a Seção de "Quiz".</li>
+            <li>Em seguida tente cadastrar um Quiz sobre qualquer assunto de Educação Financeira.</li>
+            <li>Após a criação, o usuário deve ter acesso ao Quiz criado com as respostas corretas escolhidas pelo criador.</li>
+          </ul></li>
+        </ul>
+        <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade.png" alt="Tela Cadastro de Contatos"></p>
+      </section>
+    </section>
             <!-- Estruturas de dados =============== -->
             <section id="ti_estruturas_dados">
               <h4>Estruturas de Dados</h4>
@@ -638,17 +652,99 @@
               </div>
 
               <section>
-                <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
-                <p>Contatos da aplicação</p>
+                <h5>Estrutura de Dados - Situação</h5>
+                <p>Criadores de Conteúdo e Conteúdo Cadastrado</p>
                 <pre>
                   {
-                    "id": 1,
-                    "nome": "Leanne Graham",
-                    "cidade": "Belo Horizonte",
-                    "categoria": "amigos",
-                    "email": "Sincere@april.biz",
-                    "telefone": "1-770-736-8031",
-                    "website": "hildegard.org"
+                    "users": [
+                      {
+                        "id": "1",
+                        "name": "Jo\u00e3o Silva",
+                        "email": "joao.silva@example.com",
+                        "date": "2023-01-15",
+                        "phone": "123-456-7890",
+                        "type": "Estudante"
+                      },
+                      {
+                        "id": "2",
+                        "name": "Maria Oliveira",
+                        "email": "maria.oliveira@example.com",
+                        "date": "2022-11-20",
+                        "phone": "987-654-3210",
+                        "type": "Professora"
+                      },
+                      {
+                        "id": "3",
+                        "name": "Pedro Almeida",
+                        "email": "pedro.almeida@example.com",
+                        "date": "2023-03-05",
+                        "phone": "456-789-0123",
+                        "type": "Estudante"
+                      },
+                      {
+                        "id": "4",
+                        "name": "Ana Costa",
+                        "email": "ana.costa@example.com",
+                        "date": "2023-05-22",
+                        "phone": "654-321-0987",
+                        "type": "Professora"
+                      },
+                      {
+                        "id": "5",
+                        "name": "Carlos Pereira",
+                        "email": "carlos.pereira@example.com",
+                        "date": "2023-07-18",
+                        "phone": "789-012-3456",
+                        "type": "Estudante"
+                      }
+                    ],
+                    "userDetails": [
+                      {
+                        "userId": 1,
+                        "address": "Rua A, 123, Bairro X",
+                        "city": "S\u00e3o Paulo",
+                        "state": "SP",
+                        "country": "Brasil",
+                        "zip": "01000-000",
+                        "id": "a012"
+                      },
+                      {
+                        "userId": 2,
+                        "address": "Avenida B, 456, Bairro Y",
+                        "city": "Rio de Janeiro",
+                        "state": "RJ",
+                        "country": "Brasil",
+                        "zip": "20000-000",
+                        "id": "ed4e"
+                      },
+                      {
+                        "userId": 3,
+                        "address": "Rua C, 789, Bairro Z",
+                        "city": "Belo Horizonte",
+                        "state": "MG",
+                        "country": "Brasil",
+                        "zip": "30000-000",
+                        "id": "f7g8"
+                      },
+                      {
+                        "userId": 4,
+                        "address": "Avenida D, 101, Bairro W",
+                        "city": "Curitiba",
+                        "state": "PR",
+                        "country": "Brasil",
+                        "zip": "80000-000",
+                        "id": "h9i0"
+                      },
+                      {
+                        "userId": 5,
+                        "address": "Rua E, 202, Bairro V",
+                        "city": "Salvador",
+                        "state": "BA",
+                        "country": "Brasil",
+                        "zip": "40000-000",
+                        "id": "j1k2"
+                      }
+                    ]
                   }
                 </pre>
               </section>
