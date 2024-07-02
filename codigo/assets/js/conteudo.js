@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Função para obter o caminho da imagem do autor
             function getAuthorImagePath(autorId) {
-                return `imagens/autor${autorId}.jpg`;
+                return `./images/autor${autorId}.jpg`;
             }
 
             // Criadores de Conteúdo - Educação Financeira
