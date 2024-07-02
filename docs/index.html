@@ -573,7 +573,7 @@
                 <h5>Funcionalidade 1 - Visualização de Conteúdo</h5>
                 <p>Permite o usuário visualizar conteúdos sobre a situação financeira dele, proporcionando recomendações sobre cada área de investimento.</p>
                 <ul class="list-unstyled">
-                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                   <li><strong>Instruções de acesso: </strong><ul>
                     <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -590,7 +590,7 @@
               <h5>Funcionalidade 2 - Cadastro de Conteúdos</h5>
               <p>Permite o usuário cadastrar conteúdos para o nosso site, além de divulgar seu trabalho como educador financeiro.</p>
               <ul class="list-unstyled">
-                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                 <li><strong>Instruções de acesso: </strong><ul>
                   <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -642,7 +642,7 @@
         <h5>Funcionalidade 5 - Cadastro e Visualização de Quizzes</h5>
         <p>Permite o usuário cadastrar Quizzes sobre diversos assuntos de Educação financeira, além de visualizar e responderos Quizzes.</p>
         <ul class="list-unstyled">
-          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Quizzes</a></li>
           <li><strong>Instruções de acesso: </strong><ul>
             <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -667,6 +667,19 @@
         </ul>
         <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade6.png" alt="Tela Cadastro de Contatos"></p>
       </section>
+      <section>
+        <h5>Funcionalidade 7 - Tela de Login/Cadastro</h5>
+        <p>Permite o usuário cadastrar ou fazer login no site.</p>
+        <ul class="list-unstyled">
+          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Usuário</a></li>
+          <li><strong>Instruções de acesso: </strong><ul>
+            <li>Ao entrar no site pela tela de Cadastro, o Usuário vai preencher as informações necessárias.</li>
+            <li>Em seguida fazer o Login com as Informações fornecidas.</li>
+            <li>Após a criação da conta e do login, vai ser redirecionado a homepage.</li>
+          </ul></li>
+        </ul>
+        <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade7.png" alt="Tela Cadastro de Contatos"></p>
+      </section>
     </section>
             <!-- Estruturas de dados =============== -->
             <section id="ti_estruturas_dados">
@@ -684,98 +697,328 @@
                 <p>Criadores de Conteúdo e Conteúdo Cadastrado</p>
                 <pre>
                   {
-                    "users": [
-                      {
-                        "id": "1",
-                        "name": "Jo\u00e3o Silva",
-                        "email": "joao.silva@example.com",
-                        "date": "2023-01-15",
-                        "phone": "123-456-7890",
-                        "type": "Estudante"
-                      },
-                      {
-                        "id": "2",
-                        "name": "Maria Oliveira",
-                        "email": "maria.oliveira@example.com",
-                        "date": "2022-11-20",
-                        "phone": "987-654-3210",
-                        "type": "Professora"
-                      },
-                      {
-                        "id": "3",
-                        "name": "Pedro Almeida",
-                        "email": "pedro.almeida@example.com",
-                        "date": "2023-03-05",
-                        "phone": "456-789-0123",
-                        "type": "Estudante"
-                      },
-                      {
-                        "id": "4",
-                        "name": "Ana Costa",
-                        "email": "ana.costa@example.com",
-                        "date": "2023-05-22",
-                        "phone": "654-321-0987",
-                        "type": "Professora"
-                      },
-                      {
-                        "id": "5",
-                        "name": "Carlos Pereira",
-                        "email": "carlos.pereira@example.com",
-                        "date": "2023-07-18",
-                        "phone": "789-012-3456",
-                        "type": "Estudante"
-                      }
-                    ],
-                    "userDetails": [
-                      {
-                        "userId": 1,
-                        "address": "Rua A, 123, Bairro X",
-                        "city": "S\u00e3o Paulo",
-                        "state": "SP",
-                        "country": "Brasil",
-                        "zip": "01000-000",
-                        "id": "a012"
-                      },
-                      {
-                        "userId": 2,
-                        "address": "Avenida B, 456, Bairro Y",
-                        "city": "Rio de Janeiro",
-                        "state": "RJ",
-                        "country": "Brasil",
-                        "zip": "20000-000",
-                        "id": "ed4e"
-                      },
-                      {
-                        "userId": 3,
-                        "address": "Rua C, 789, Bairro Z",
-                        "city": "Belo Horizonte",
-                        "state": "MG",
-                        "country": "Brasil",
-                        "zip": "30000-000",
-                        "id": "f7g8"
-                      },
-                      {
-                        "userId": 4,
-                        "address": "Avenida D, 101, Bairro W",
-                        "city": "Curitiba",
-                        "state": "PR",
-                        "country": "Brasil",
-                        "zip": "80000-000",
-                        "id": "h9i0"
-                      },
-                      {
-                        "userId": 5,
-                        "address": "Rua E, 202, Bairro V",
-                        "city": "Salvador",
-                        "state": "BA",
-                        "country": "Brasil",
-                        "zip": "40000-000",
-                        "id": "j1k2"
-                      }
-                    ]
-                  }
+    "conteudos": [
+        {
+            "id": 1,
+            "titulo": "Introdução à Poupança",
+            "descricao": "Uma visão geral sobre a importância de poupar dinheiro e dicas práticas para começar.",
+            "autor_id": 1,
+            "data_publicacao": "2023-01-15",
+            "categoria_id": 1,
+            "tags": [
+                "poupança",
+                "economia"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Noções Básicas de Investimento",
+            "descricao": "Entenda os princípios básicos do investimento e como começar a investir de forma segura.",
+            "autor_id": 2,
+            "data_publicacao": "2023-02-20",
+            "categoria_id": 2,
+            "tags": [
+                "investimento",
+                "principiantes"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Como Fazer um Orçamento",
+            "descricao": "Aprenda a criar e manter um orçamento pessoal para controlar suas finanças.",
+            "autor_id": 3,
+            "data_publicacao": "2023-03-10",
+            "categoria_id": 3,
+            "tags": [
+                "orçamento",
+                "finanças pessoais"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titulo": "Gestão de Dívidas",
+            "descricao": "Estratégias eficazes para gerenciar e pagar suas dívidas de forma eficiente.",
+            "autor_id": 4,
+            "data_publicacao": "2023-04-05",
+            "categoria_id": 4,
+            "tags": [
+                "dívidas",
+                "gestão"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "titulo": "Entendendo o Crédito",
+            "descricao": "Tudo o que você precisa saber sobre crédito, como funciona e como usá-lo com responsabilidade.",
+            "autor_id": 5,
+            "data_publicacao": "2023-05-01",
+            "categoria_id": 5,
+            "tags": [
+                "crédito",
+                "responsabilidade"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "Planejamento para Aposentadoria",
+            "descricao": "Dicas e estratégias para planejar uma aposentadoria segura e confortável.",
+            "autor_id": 6,
+            "data_publicacao": "2023-06-12",
+            "categoria_id": 6,
+            "tags": [
+                "aposentadoria",
+                "planejamento"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        }
+    ],
+    "autores": [
+        {
+            "id": 1,
+            "nome": "Maria Silva",
+            "email": "maria.silva@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Maria Silva é uma consultora financeira experiente com mais de 15 anos de atuação no mercado. Ela é especializada em educação financeira e ajudou inúmeras pessoas a melhorarem suas finanças pessoais."
+        },
+        {
+            "id": 2,
+            "nome": "João Pereira",
+            "email": "joao.pereira@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "João Pereira é um especialista em investimentos e autor de vários livros sobre como investir com segurança. Com mais de 20 anos de experiência, ele é uma referência no setor financeiro."
+        },
+        {
+            "id": 3,
+            "nome": "Ana Souza",
+            "email": "ana.souza@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Ana Souza é uma planejadora financeira certificada e coach de finanças pessoais. Ela trabalha com clientes para desenvolver estratégias personalizadas de orçamento e gestão financeira."
+        },
+        {
+            "id": 4,
+            "nome": "Carlos Lima",
+            "email": "carlos.lima@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Carlos Lima é um consultor de dívidas que ajuda indivíduos e empresas a saírem do vermelho e estruturarem suas finanças de maneira eficiente. Ele possui um blog popular sobre gestão de dívidas."
+        },
+        {
+            "id": 5,
+            "nome": "Beatriz Andrade",
+            "email": "beatriz.andrade@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Beatriz Andrade é uma especialista em crédito com ampla experiência em bancos e instituições financeiras. Ela oferece conselhos sobre como usar o crédito de forma responsável e eficiente."
+        },
+        {
+            "id": 6,
+            "nome": "Roberto Fernandes",
+            "email": "roberto.fernandes@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Roberto Fernandes é um planejador financeiro focado em aposentadoria. Ele ajuda seus clientes a planejarem um futuro financeiro seguro, oferecendo dicas e estratégias de investimento."
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Educação Financeira"
+        },
+        {
+            "id": 2,
+            "nome": "Investimento"
+        },
+        {
+            "id": 3,
+            "nome": "Orçamento"
+        },
+        {
+            "id": 4,
+            "nome": "Dívidas"
+        },
+        {
+            "id": 5,
+            "nome": "Crédito"
+        },
+        {
+            "id": 6,
+            "nome": "Aposentadoria"
+        }
+    ],
+    "favoritos": [
+        {
+            "id": 1,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 1
+        },
+        {
+            "id": 2,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 3
+        },
+        {
+            "id": 3,
+            "usuario_id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+            "conteudo_id": 2
+        }
+    ]
+}
                 </pre>
               </section>
+
+              <h5>Estrutura de Dados - Usuários</h5>
+              <p>Usuários registrados no site</p>
+              <pre>
+                {
+                  "users": [
+                    {
+                      "id": "1",
+                      "name": "Jo\u00e3o Silva",
+                      "email": "joao.silva@example.com",
+                      "date": "2023-01-15",
+                      "phone": "123-456-7890",
+                      "type": "Estudante"
+                    },
+                    {
+                      "id": "2",
+                      "name": "Maria Oliveira",
+                      "email": "maria.oliveira@example.com",
+                      "date": "2022-11-20",
+                      "phone": "987-654-3210",
+                      "type": "Professora"
+                    },
+                    {
+                      "id": "3",
+                      "name": "Pedro Almeida",
+                      "email": "pedro.almeida@example.com",
+                      "date": "2023-03-05",
+                      "phone": "456-789-0123",
+                      "type": "Estudante"
+                    },
+                    {
+                      "id": "4",
+                      "name": "Ana Costa",
+                      "email": "ana.costa@example.com",
+                      "date": "2023-05-22",
+                      "phone": "654-321-0987",
+                      "type": "Professora"
+                    },
+                    {
+                      "id": "5",
+                      "name": "Carlos Pereira",
+                      "email": "carlos.pereira@example.com",
+                      "date": "2023-07-18",
+                      "phone": "789-012-3456",
+                      "type": "Estudante"
+                    }
+                  ],
+                  "userDetails": [
+                    {
+                      "userId": 1,
+                      "address": "Rua A, 123, Bairro X",
+                      "city": "S\u00e3o Paulo",
+                      "state": "SP",
+                      "country": "Brasil",
+                      "zip": "01000-000",
+                      "id": "a012"
+                    },
+                    {
+                      "userId": 2,
+                      "address": "Avenida B, 456, Bairro Y",
+                      "city": "Rio de Janeiro",
+                      "state": "RJ",
+                      "country": "Brasil",
+                      "zip": "20000-000",
+                      "id": "ed4e"
+                    },
+                    {
+                      "userId": 3,
+                      "address": "Rua C, 789, Bairro Z",
+                      "city": "Belo Horizonte",
+                      "state": "MG",
+                      "country": "Brasil",
+                      "zip": "30000-000",
+                      "id": "f7g8"
+                    },
+                    {
+                      "userId": 4,
+                      "address": "Avenida D, 101, Bairro W",
+                      "city": "Curitiba",
+                      "state": "PR",
+                      "country": "Brasil",
+                      "zip": "80000-000",
+                      "id": "h9i0"
+                    },
+                    {
+                      "userId": 5,
+                      "address": "Rua E, 202, Bairro V",
+                      "city": "Salvador",
+                      "state": "BA",
+                      "country": "Brasil",
+                      "zip": "40000-000",
+                      "id": "j1k2"
+                    }
+                  ]
+                }
+              </pre>
+            </section>
+
 
               <section>
                 <h5>Estrutura de Dados - Quizzes</h5>
@@ -863,7 +1106,7 @@
               <section>
                 <h5>Images:</h5>
                 <ul>
-                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Figma - <a href="https://www.figma.com/file/P4yGUetgyJEw6LshUusfhW/TIAW-SMARTFINANCE?type=design&node-id=0%3A1&mode=design&t=FKaBQe2lwlfNn3aB-1">https://www.figma.com/SmartFinance</li>
                 </ul>
               </section>
 
