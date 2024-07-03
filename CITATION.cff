@@ -12,8 +12,6 @@ authors:
     given-names: Pedro Henrique
   - family-names: Martins Oliveira
     given-names: Victor
-  - family-names: 
-    given-names:
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Silva Tavares
@@ -23,9 +21,9 @@ authors:
     family-names: Vieira Carneiro
     given-names: Rommel
 keywords:
-  - 
-  - 
-repository-code: 
+  - Investimento
+  - Financeiro
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387100-smartfinance/tree/master
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
