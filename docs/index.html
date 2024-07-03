@@ -556,7 +556,11 @@
                 <p>O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.</p>
                 <p>Utilize o recurso de compartilhamento via embed e inclua o vídeo logo abaixo.</p>
               </div>
-              <p>......  COLOQUE AQUI O SEU VIDEO ......</p>
+              <video src="./assets/smartfinance.mp4"
+              controls
+              width="500"></video>
+              <p>Segue o vídeo em link pelo YouTube: <a href="https://www.youtube.com/watch?v=24KPZJ-UI80">https://www.youtube.com/watch?v=24KPZJ-UI80</a></p>
+
             </section>
 
             <section id="ti_funcionalidades">
@@ -573,7 +577,7 @@
                 <h5>Funcionalidade 1 - Visualização de Conteúdo</h5>
                 <p>Permite o usuário visualizar conteúdos sobre a situação financeira dele, proporcionando recomendações sobre cada área de investimento.</p>
                 <ul class="list-unstyled">
-                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                   <li><strong>Instruções de acesso: </strong><ul>
                     <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -590,7 +594,7 @@
               <h5>Funcionalidade 2 - Cadastro de Conteúdos</h5>
               <p>Permite o usuário cadastrar conteúdos para o nosso site, além de divulgar seu trabalho como educador financeiro.</p>
               <ul class="list-unstyled">
-                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Situação</a></li>
                 <li><strong>Instruções de acesso: </strong><ul>
                   <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -642,7 +646,7 @@
         <h5>Funcionalidade 5 - Cadastro e Visualização de Quizzes</h5>
         <p>Permite o usuário cadastrar Quizzes sobre diversos assuntos de Educação financeira, além de visualizar e responderos Quizzes.</p>
         <ul class="list-unstyled">
-          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">SmartFinance</a></li>
+          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Quizzes</a></li>
           <li><strong>Instruções de acesso: </strong><ul>
             <li>Realizar o Cadastro no site SmartFinance.</li>
             <li>Em seguida fazer o Login com as Informações fornecidas.</li>
@@ -667,6 +671,19 @@
         </ul>
         <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade6.png" alt="Tela Cadastro de Contatos"></p>
       </section>
+      <section>
+        <h5>Funcionalidade 7 - Tela de Login/Cadastro</h5>
+        <p>Permite o usuário cadastrar ou fazer login no site.</p>
+        <ul class="list-unstyled">
+          <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Usuário</a></li>
+          <li><strong>Instruções de acesso: </strong><ul>
+            <li>Ao entrar no site pela tela de Cadastro, o Usuário vai preencher as informações necessárias.</li>
+            <li>Em seguida fazer o Login com as Informações fornecidas.</li>
+            <li>Após a criação da conta e do login, vai ser redirecionado a homepage.</li>
+          </ul></li>
+        </ul>
+        <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade7.png" alt="Tela Cadastro de Contatos"></p>
+      </section>
     </section>
             <!-- Estruturas de dados =============== -->
             <section id="ti_estruturas_dados">
@@ -684,98 +701,312 @@
                 <p>Criadores de Conteúdo e Conteúdo Cadastrado</p>
                 <pre>
                   {
-                    "users": [
-                      {
-                        "id": "1",
-                        "name": "Jo\u00e3o Silva",
-                        "email": "joao.silva@example.com",
-                        "date": "2023-01-15",
-                        "phone": "123-456-7890",
-                        "type": "Estudante"
-                      },
-                      {
-                        "id": "2",
-                        "name": "Maria Oliveira",
-                        "email": "maria.oliveira@example.com",
-                        "date": "2022-11-20",
-                        "phone": "987-654-3210",
-                        "type": "Professora"
-                      },
-                      {
-                        "id": "3",
-                        "name": "Pedro Almeida",
-                        "email": "pedro.almeida@example.com",
-                        "date": "2023-03-05",
-                        "phone": "456-789-0123",
-                        "type": "Estudante"
-                      },
-                      {
-                        "id": "4",
-                        "name": "Ana Costa",
-                        "email": "ana.costa@example.com",
-                        "date": "2023-05-22",
-                        "phone": "654-321-0987",
-                        "type": "Professora"
-                      },
-                      {
-                        "id": "5",
-                        "name": "Carlos Pereira",
-                        "email": "carlos.pereira@example.com",
-                        "date": "2023-07-18",
-                        "phone": "789-012-3456",
-                        "type": "Estudante"
-                      }
-                    ],
-                    "userDetails": [
-                      {
-                        "userId": 1,
-                        "address": "Rua A, 123, Bairro X",
-                        "city": "S\u00e3o Paulo",
-                        "state": "SP",
-                        "country": "Brasil",
-                        "zip": "01000-000",
-                        "id": "a012"
-                      },
-                      {
-                        "userId": 2,
-                        "address": "Avenida B, 456, Bairro Y",
-                        "city": "Rio de Janeiro",
-                        "state": "RJ",
-                        "country": "Brasil",
-                        "zip": "20000-000",
-                        "id": "ed4e"
-                      },
-                      {
-                        "userId": 3,
-                        "address": "Rua C, 789, Bairro Z",
-                        "city": "Belo Horizonte",
-                        "state": "MG",
-                        "country": "Brasil",
-                        "zip": "30000-000",
-                        "id": "f7g8"
-                      },
-                      {
-                        "userId": 4,
-                        "address": "Avenida D, 101, Bairro W",
-                        "city": "Curitiba",
-                        "state": "PR",
-                        "country": "Brasil",
-                        "zip": "80000-000",
-                        "id": "h9i0"
-                      },
-                      {
-                        "userId": 5,
-                        "address": "Rua E, 202, Bairro V",
-                        "city": "Salvador",
-                        "state": "BA",
-                        "country": "Brasil",
-                        "zip": "40000-000",
-                        "id": "j1k2"
-                      }
-                    ]
-                  }
+    "conteudos": [
+        {
+            "id": 1,
+            "titulo": "Introdução à Poupança",
+            "descricao": "Uma visão geral sobre a importância de poupar dinheiro e dicas práticas para começar.",
+            "autor_id": 1,
+            "data_publicacao": "2023-01-15",
+            "categoria_id": 1,
+            "tags": [
+                "poupança",
+                "economia"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Noções Básicas de Investimento",
+            "descricao": "Entenda os princípios básicos do investimento e como começar a investir de forma segura.",
+            "autor_id": 2,
+            "data_publicacao": "2023-02-20",
+            "categoria_id": 2,
+            "tags": [
+                "investimento",
+                "principiantes"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Como Fazer um Orçamento",
+            "descricao": "Aprenda a criar e manter um orçamento pessoal para controlar suas finanças.",
+            "autor_id": 3,
+            "data_publicacao": "2023-03-10",
+            "categoria_id": 3,
+            "tags": [
+                "orçamento",
+                "finanças pessoais"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titulo": "Gestão de Dívidas",
+            "descricao": "Estratégias eficazes para gerenciar e pagar suas dívidas de forma eficiente.",
+            "autor_id": 4,
+            "data_publicacao": "2023-04-05",
+            "categoria_id": 4,
+            "tags": [
+                "dívidas",
+                "gestão"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "titulo": "Entendendo o Crédito",
+            "descricao": "Tudo o que você precisa saber sobre crédito, como funciona e como usá-lo com responsabilidade.",
+            "autor_id": 5,
+            "data_publicacao": "2023-05-01",
+            "categoria_id": 5,
+            "tags": [
+                "crédito",
+                "responsabilidade"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "Planejamento para Aposentadoria",
+            "descricao": "Dicas e estratégias para planejar uma aposentadoria segura e confortável.",
+            "autor_id": 6,
+            "data_publicacao": "2023-06-12",
+            "categoria_id": 6,
+            "tags": [
+                "aposentadoria",
+                "planejamento"
+            ],
+            "links": [
+                {
+                    "tipo": "artigo",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                },
+                {
+                    "tipo": "video",
+                    "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
+                }
+            ]
+        }
+    ],
+    "autores": [
+        {
+            "id": 1,
+            "nome": "Maria Silva",
+            "email": "maria.silva@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Maria Silva é uma consultora financeira experiente com mais de 15 anos de atuação no mercado. Ela é especializada em educação financeira e ajudou inúmeras pessoas a melhorarem suas finanças pessoais."
+        },
+        {
+            "id": 2,
+            "nome": "João Pereira",
+            "email": "joao.pereira@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "João Pereira é um especialista em investimentos e autor de vários livros sobre como investir com segurança. Com mais de 20 anos de experiência, ele é uma referência no setor financeiro."
+        },
+        {
+            "id": 3,
+            "nome": "Ana Souza",
+            "email": "ana.souza@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Ana Souza é uma planejadora financeira certificada e coach de finanças pessoais. Ela trabalha com clientes para desenvolver estratégias personalizadas de orçamento e gestão financeira."
+        },
+        {
+            "id": 4,
+            "nome": "Carlos Lima",
+            "email": "carlos.lima@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Carlos Lima é um consultor de dívidas que ajuda indivíduos e empresas a saírem do vermelho e estruturarem suas finanças de maneira eficiente. Ele possui um blog popular sobre gestão de dívidas."
+        },
+        {
+            "id": 5,
+            "nome": "Beatriz Andrade",
+            "email": "beatriz.andrade@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Beatriz Andrade é uma especialista em crédito com ampla experiência em bancos e instituições financeiras. Ela oferece conselhos sobre como usar o crédito de forma responsável e eficiente."
+        },
+        {
+            "id": 6,
+            "nome": "Roberto Fernandes",
+            "email": "roberto.fernandes@exemplo.com",
+            "website": "https://www.pucminas.br/destaques/Paginas/default.aspx",
+            "descricao": "Roberto Fernandes é um planejador financeiro focado em aposentadoria. Ele ajuda seus clientes a planejarem um futuro financeiro seguro, oferecendo dicas e estratégias de investimento."
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Educação Financeira"
+        },
+        {
+            "id": 2,
+            "nome": "Investimento"
+        },
+        {
+            "id": 3,
+            "nome": "Orçamento"
+        },
+        {
+            "id": 4,
+            "nome": "Dívidas"
+        },
+        {
+            "id": 5,
+            "nome": "Crédito"
+        },
+        {
+            "id": 6,
+            "nome": "Aposentadoria"
+        }
+    ],
+    "favoritos": [
+        {
+            "id": 1,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 1
+        },
+        {
+            "id": 2,
+            "usuario_id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+            "conteudo_id": 3
+        },
+        {
+            "id": 3,
+            "usuario_id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+            "conteudo_id": 2
+        }
+    ]
+}
                 </pre>
               </section>
+
+              <h5>Estrutura de Dados - Usuários</h5>
+              <p>Usuários registrados no site</p>
+              <pre>
+                {
+                  "usuarios": [
+                    {
+                      "id": 1719950873667,
+                      "username": "teste",
+                      "type": "normal",
+                      "email": "teste@gmail.com",
+                      "password": "123"
+                    },
+                    {
+                      "id": 1719950873668,
+                      "username": "joao_silva",
+                      "type": "estudante",
+                      "email": "joao.silva@example.com",
+                      "password": "joao123"
+                    },
+                    {
+                      "id": 1719950873669,
+                      "username": "maria_oliveira",
+                      "type": "professor",
+                      "email": "maria.oliveira@example.com",
+                      "password": "maria456"
+                    },
+                    {
+                      "id": 1719950873670,
+                      "username": "ana_souza",
+                      "type": "estudante",
+                      "email": "ana.souza@example.com",
+                      "password": "ana789"
+                    },
+                    {
+                      "id": 1719950873671,
+                      "username": "carlos_pereira",
+                      "type": "professor",
+                      "email": "carlos.pereira@example.com",
+                      "password": "carlos101112"
+                    },
+                    {
+                      "id": 1719950873672,
+                      "username": "beatriz_santos",
+                      "type": "estudante",
+                      "email": "beatriz.santos@example.com",
+                      "password": "beatriz131415"
+                    },
+                    {
+                      "id": 1719950873673,
+                      "username": "lucas_fernandes",
+                      "type": "estudante",
+                      "email": "lucas.fernandes@example.com",
+                      "password": "lucas161718"
+                    },
+                    {
+                      "id": 1719950873674,
+                      "username": "patricia_rodrigues",
+                      "type": "professor",
+                      "email": "patricia.rodrigues@example.com",
+                      "password": "patricia192021"
+                    },
+                    {
+                      "id": 1719950873675,
+                      "username": "ricardo_martins",
+                      "type": "estudante",
+                      "email": "ricardo.martins@example.com",
+                      "password": "ricardo222324"
+                    },
+                    {
+                      "id": 1719950873676,
+                      "username": "fernanda_almeida",
+                      "type": "professor",
+                      "email": "fernanda.almeida@example.com",
+                      "password": "fernanda252627"
+                    }
+                  ]
+                }
+                
+              </pre>
+            </section>
+
 
               <section>
                 <h5>Estrutura de Dados - Quizzes</h5>
@@ -863,22 +1094,21 @@
               <section>
                 <h5>Images:</h5>
                 <ul>
-                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Figma - <a href="https://www.figma.com/file/P4yGUetgyJEw6LshUusfhW/TIAW-SMARTFINANCE?type=design&node-id=0%3A1&mode=design&t=FKaBQe2lwlfNn3aB-1">https://www.figma.com/SmartFinance</li>
                 </ul>
               </section>
 
               <section>
                 <h5>Fonts:</h5>
                 <ul>
-                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>GUID / UUID - <a target="_blank" href="https://stackoverflow.com/questions/105034/how-to-create-guid-uuid">https://stackoverflow.com/questions/105034/how-to-create-guid-uuid</a></li>
                 </ul>
               </section>
 
               <section>
                 <h5>Scripts:</h5>
                 <ul>
-                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
                 </ul>
               </section>
             </section>
@@ -895,47 +1125,34 @@
             <div class="alert alert-warning collapse" role="alert" id="collapseFAQ">
               <p>Apresente uma lista de perguntas e respostas comuns associadas ao projeto. Inclua perguntas como: (1) detalhes de acesso e uso do projeto; (2) informações sobre a instalação e configuração da aplicação; (3) questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros sistemas; (5) questões sobre a segurança da aplicação.</p>
             </div>
-
-            <span class="exemplo">EXEMPLO</span>
             <div class="row">
               <div class="col-lg-12">
                 <div class="accordion accordion-alterate arrow-right" id="popularTopics">
                   <div class="card">
                     <div class="card-header" id="heading1">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
-                          aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse1">Quais os motivos pela escolha de desenvolver essa aplicação?</a> </h5>
                     </div>
                     <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged. </div>
+                      <div class="card-body"> Acreditamos que todos em uma sociedade moderna vivenciam momentos de instabilidade financeira por diversos motivos, porém os principais são a falta de educação financeira durante a vida além da falta de acesso ao mesmo, e a falta de controle financeiro gerado pela educação escassa. Pensando nisso desenvolvemos algumas ferramentas que possam ajudar o usuário a ter acesso a conteúdos de educação financeira, além de ter maior controle sobre o fluxo de caixa. </div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading2">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                          aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse2">Como foi o processo de integração?</a> </h5>
                     </div>
                     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. </div>
+                      <div class="card-body">  Tivemos alguns desafios durante a integração do nosso projeto devido aos pequenos imprevistos que apareceram durante o desenvolvimento da aplicação, porém tudo foi finalizado como esperado. </div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading3">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                          aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
-                          products?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse3">Como foi o processo de integração? Os dados inseridos estão em segurança?</a> </h5>
                     </div>
                     <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                        essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
-                        imperdiet. </div>
+                      <div class="card-body"> Tivemos alguns desafios durante a integração do nosso projeto devido aos pequenos imprevistos que apareceram durante o desenvolvimento da aplicação, porém tudo foi finalizado como esperado. Os dados inseridos na nossa aplicação são salvos de forma segura e armazenados em JSON Server.</div>
                     </div>
                   </div>
                 </div>

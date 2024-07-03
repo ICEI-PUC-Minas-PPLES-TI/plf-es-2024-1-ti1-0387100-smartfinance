@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const apiUrl = 'http://localhost:3000/usuarios';
+
+  // Função para cadastrar um novo usuário
+  async function cadastrarUsuario(novoUsuario) {
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(novoUsuario)
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao cadastrar usuário');
+      }
+
+      console.log('Usuário cadastrado:', novoUsuario);
+      alert('Usuário cadastrado com sucesso!');
+    } catch (error) {
+      console.error(error);
+      alert('Erro ao cadastrar usuário');
+    }
+  }
+
   // Validação do formulário de cadastro
   document.getElementById('cadastro-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -18,10 +43,32 @@ document.addEventListener('DOMContentLoaded', function () {
       password: password
     };
 
-    console.log('Usuário cadastrado:', novoUsuario);
-    alert('Usuário cadastrado com sucesso!');
+    cadastrarUsuario(novoUsuario);
     document.getElementById('cadastro-form').reset();
   });
+
+  // Função para autenticar usuário
+  async function autenticarUsuario(email, password) {
+    try {
+      const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error('Erro ao buscar usuários');
+      }
+
+      const usuarios = await response.json();
+      const usuarioEncontrado = usuarios.find(user => user.email === email && user.password === password);
+
+      if (usuarioEncontrado) {
+        console.log('Login realizado com sucesso:', usuarioEncontrado);
+        alert('Login realizado com sucesso!');
+      } else {
+        alert('Email ou senha incorretos.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Erro ao realizar login');
+    }
+  }
 
   // Validação do formulário de login
   document.getElementById('login-form').addEventListener('submit', function (event) {
@@ -30,12 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Implementar lógica de autenticação aqui
-    console.log('Tentativa de login:', { email, password });
-    alert('Login realizado com sucesso!');
+    autenticarUsuario(email, password);
   });
-});
-document.addEventListener("DOMContentLoaded", function() {
+
+  // Lógica para manipulação da sidebar
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let homeLink = document.querySelector("#home-link");

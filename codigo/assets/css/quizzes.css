@@ -15,6 +15,10 @@ button {
   background-color: #181818 !important;
 }
 
+#quizzesList{
+    width: 800px !important;
+}
+
 .form-control {
     background-color: #181818 !important;
     color: white !important;
